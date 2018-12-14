@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.destroy_all
 
-10.times do |index|
+20.times do |index|
   Product.create!(strain: Faker::Cannabis.strain,
                   cann_abbr: Faker::Cannabis.cannabinoid_abbreviation,
                   cost: (rand() * 10).to_i,

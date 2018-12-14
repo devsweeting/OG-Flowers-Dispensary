@@ -17,12 +17,9 @@
 
   <%= f.label :description %>
   <%= f.text_field (:description) %>
-  <!-- <%= text_area_tag(:description, "Write a review here", size: "24x6") %> -->
 
   <%= f.label :rating%>
   <%= f.number_field(:rating, in: 1.0..5.0,) %>
 
   <%= f.submit "submit"  %>
 <% end %>
-
-<!--new_product_review_path  -->

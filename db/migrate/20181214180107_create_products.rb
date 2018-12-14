@@ -5,7 +5,6 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t. column :cann_abbr, :string
       t. column :cost, :float
       t. column :origin, :string
-
     end
   end
 end
