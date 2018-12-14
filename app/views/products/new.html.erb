@@ -1,15 +1,8 @@
 <h1>New Product</h1>
 
-<% if @product.errors.any? %>
-  <h3>Oops there were some errors. Please try again:</h3>
-  <ul>
-    <% @product.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
-
 <hr>
+
+<!-- <%= render "layouts/form" %> -->
 
 <%= form_for @product do |f| %>
   <%= f.label :strain %>

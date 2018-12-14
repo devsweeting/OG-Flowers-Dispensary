@@ -6,7 +6,6 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t. column :cost, :float
       t. column :origin, :string
 
-      t. timestamps
     end
   end
 end
