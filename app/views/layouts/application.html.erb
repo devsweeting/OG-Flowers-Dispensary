@@ -10,6 +10,15 @@
   </head>
 
   <body>
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 id="jumbotron">OG Flowers</h1>
+    </div>
+
+    <%= flash[:alert] %>
+    <%= flash[:notice] %>
     <%= yield %>
+  </div>
   </body>
 </html>
