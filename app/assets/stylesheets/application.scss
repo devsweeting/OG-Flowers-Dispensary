@@ -16,7 +16,23 @@
 @import "bootstrap";
 
 .jumbotron {
-  background-color: #99ed93
+  background-color: #99ed93;
+  background-image: url(http://acheer2u.com/cat/weed/img/banner002.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron h1 {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  left: 0%;
+  right:32%;
+  font-size: 87px;
+  text-shadow: black 0.3em 0.3em 0.7em;
+  color: white;
 }
 
 body {
@@ -25,9 +41,17 @@ body {
 
 .card {
   border: 1px solid black;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 .card-img-top {
   width: 100px;
   height: 100px;
+  align-content: center;
+}
+
+#info-button {
+  margin-left: 30px;
+  margin-bottom: 5px;
 }

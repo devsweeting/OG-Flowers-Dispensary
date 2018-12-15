@@ -13,3 +13,5 @@ Product.destroy_all
                   cost: (rand() * 10).to_i,
                   origin: Faker::Nation.nationality)
                 end
+
+  Review
