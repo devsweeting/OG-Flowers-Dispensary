@@ -25,7 +25,7 @@ end
 
 3.times do |index|
    Review.create!(author: Faker::Pokemon.name,
-                  description: Faker::FamousLastWords.last_words,
+                  description: Faker::HowIMetYourMother.catch_phrase,
                   rating: Faker::Number.between(1, 5),
                   product_id: Product.all[1].id)
 
@@ -41,7 +41,7 @@ end
 
 3.times do |index|
    Review.create!(author: Faker::Pokemon.name,
-                  description: Faker::FamousLastWords.last_words,
+                  description: Faker::HowIMetYourMother.catch_phrase,
                   rating: Faker::Number.between(1, 5),
                   product_id: Product.all[3].id)
 
@@ -65,7 +65,7 @@ end
 
 3.times do |index|
    Review.create!(author: Faker::Pokemon.name,
-                  description: Faker::FamousLastWords.last_words,
+                  description: Faker::HowIMetYourMother.catch_phrase,
                   rating: Faker::Number.between(1, 5),
                   product_id: Product.all[6].id)
 
@@ -101,7 +101,7 @@ end
 
 3.times do |index|
    Review.create!(author: Faker::Pokemon.name,
-                  description: Faker::FamousLastWords.last_words,
+                  description: Faker::HowIMetYourMother.catch_phrase,
                   rating: Faker::Number.between(1, 5),
                   product_id: Product.all[10].id)
 
