@@ -1,14 +1,25 @@
-<h1>Products</h1>
+<div class="card" id="intro_text">
+  <h3>Welcome to the all natural bud store. The one stop shop for all your cannabis needs! </h3>
+  <h5>Pick from our products below or add a new product to our stock here: <%= link_to "New Product", new_product_path %></h5>
+  <br>
+</div>
+
+<em><h1>Available Products:</h1></em>
+
+<!-- < Product.ten_most_recent.each do |product| %>
+  <= product.strain %>
+  Add TIME STAMPS to columns to get scope to work
+< end %> -->
 
 <div class="row">
   <% @products.each do |product| %>
     <div class="col-md-3">
-    <div class="card" style="width: 18rem;">
-      <center><img class="card-img-top" src="/weed<%=rand(9)%>.png" alt="Card image cap"></center>
+    <div class="index_card" class="card" style="width: 18rem;">
+      <center><img class="card-img-top" id="index_img" src="/weed<%=rand(9)%>.png" alt="Card image cap"></center>
       <div class="card-body">
-        <h5 class="card-title"><%= product.strain %></h5>
+        <h5 id="strain_title" class="card-title"><%= product.strain %></h5>
         <p class="card-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,.</p>
-        <button id="info-button" class="btn btn-info"><%= link_to product.strain, product_path(product) %></button>
+        <button id="info-button" class="btn btn-muted"><%= link_to "Order", product_path(product) %></button>
       </div>
     </div>
   </div>
@@ -16,6 +27,6 @@
 </div>
 
 
-<%= link_to "New Product", new_product_path %>
+<center><button id="index_button" class="btn btn-muted"><%= link_to "New Product", new_product_path %></button></center>
 
 <!-- https://webiconspng.com/wp-content/uploads/2017/09/Cannabis-PNG-Image-27186.png -->
