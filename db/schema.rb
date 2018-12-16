@@ -20,8 +20,6 @@ ActiveRecord::Schema.define(version: 2018_12_14_201038) do
     t.string "cann_abbr"
     t.float "cost"
     t.string "origin"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "reviews", force: :cascade do |t|
