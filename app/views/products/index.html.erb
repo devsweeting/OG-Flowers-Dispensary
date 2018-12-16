@@ -4,7 +4,7 @@
   <% @products.each do |product| %>
     <div class="col-md-3">
     <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://webiconspng.com/wp-content/uploads/2017/09/Cannabis-PNG-Image-27186.png" alt="Card image cap">
+      <center><img class="card-img-top" src="/weed<%=rand(9)%>.png" alt="Card image cap"></center>
       <div class="card-body">
         <h5 class="card-title"><%= product.strain %></h5>
         <p class="card-text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,.</p>
@@ -17,3 +17,5 @@
 
 
 <%= link_to "New Product", new_product_path %>
+
+<!-- https://webiconspng.com/wp-content/uploads/2017/09/Cannabis-PNG-Image-27186.png -->
