@@ -11,17 +11,25 @@
 
   <body>
   <div class="container">
-    <div class="jumbotron">
+    <header class="jumbotron">
       <h1 id="jumbotron">OG Flowers</h1>
-    </div>
+    </header>
 
-<!-- add to navbar later -->
-    <% if current_user %>
-      <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
-    <% else %>
-      <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin' %>
-    <% end %>
-<!--  -->
+    <nav class="navbar">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="/products">Home</a></li>
+
+          <li role="presentation"><%= link_to "New Product", new_product_path %></li>
+
+          <% if current_user %>
+          <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
+          <% else %>
+          <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin' %>
+          <% end %>
+        </ul>
+     </nav>
+
+
 
     <%= flash[:alert] %>
     <%= flash[:notice] %>

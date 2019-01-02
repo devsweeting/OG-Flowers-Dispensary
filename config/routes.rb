@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   resources :products do
     resources :reviews, :except => [:show, :index]
   end
-
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
