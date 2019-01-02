@@ -41,11 +41,13 @@ gem 'jquery-rails'
 gem 'pivotal_git_scripts'
 
 group :development, :test do
- gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'factory_bot'
+  gem 'simplecov', require: false, group: :test
 end
 
 
