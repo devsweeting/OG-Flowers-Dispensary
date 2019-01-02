@@ -1,9 +1,10 @@
 class ReviewsController < ApplicationController
   before_action :authorize, only: [:secret]
+  # before_action :authenticate_user!, :only => [:new]
 
   def secret
   end
-  
+
   def new
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new
