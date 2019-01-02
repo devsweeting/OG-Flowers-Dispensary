@@ -1,6 +1,6 @@
 # OG Flowers Dispensary
 
-#### A make-shift eccommerce store for all your cannabis needs, 12/16/18
+#### A practice Ecommerce store for all your cannabis needs, 12/16/18
 
 #### By Devin Sweeting
 
@@ -11,7 +11,7 @@ This application utilizes our knowledge from the week 1 ruby on rails coursework
 ## Setup/Installation Requirements
 
 * This application was built on Ruby 2.5.1 on Rails 5.2.2, using PostgreSQL as a database server. If you have these or equivalent versions installed, you're ready to install this repository:
-* Clone this repository `$ git clone https://github.com/colemars/specialty-foods`.
+* Clone this repository `$ git clone https://github.com/devsweeting/OG-Flowers-Dispensary.git`.
 * Install dependencies: `$ bundle install`
 * Start your Postgres server: `$ postgres`
 * Create and migrate the databases: `$ rails db:setup`
